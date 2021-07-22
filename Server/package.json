@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "this is server socket",
   "main": "index.js",
-  "start": "node-sass sass/main.scss  css/style.css -w",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss  css/style.css -w",
+     "start": "node-sass sass/main.scss  css/style.css -w",
   },
   "author": "jay",
   "license": "ISC",
