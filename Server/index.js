@@ -1,9 +1,3 @@
-const io = require('socket.io')( process.env.PORT || 8000, {
-    cors: {
-      origin: '*',
-    }
-  });
-
 var path = require('path');
 
 const express=require('express')
