@@ -9,7 +9,14 @@ var path = require('path');
 const express=require('express')
 const app=express()
 const route=express.Router()
-const port= process.env.PORT || 3000
+var http = require('http').createServer(app);
+var io = require('socket.io')(http);
+
+http.listen(process.env.PORT || 8000, function() {
+    var host = http.address().address
+    var port = http.address().port
+    console.log('App listening at ', port)
+});
 
 route.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'/index.html'))
@@ -28,9 +35,6 @@ route.get('/wallpaper.png',(req,res)=>{
 })
 
 app.use('/', route);
-app.listen(port,()=>{
-    console.log(`starting Server`)
-})
 
 const users = {};
 
