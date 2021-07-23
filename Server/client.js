@@ -1,4 +1,4 @@
-const socket=io('https://live-chat-web.herokuapp.com/')
+const socket=io()
 
 
 const messageForm=document.getElementById("message-send-form")
