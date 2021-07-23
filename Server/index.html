@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+        <script defer src="client.js"></script>
+        <link rel="stylesheet" href="client.css">
+    </head>
+    <body>
+        <nav>
+            <h1>Chat App</h1>
+        </nav>
+        <div class="row">
+            <div class="online col-lg-3 col-md-3 col-sm-2">
+                <h1 style="color: white;">Online</h1>
+                <div class="onlineusershow"></div>
+            </div>
+            <div class="app col-lg-8 col-md-8 col-sm-9">
+                <div class="chat-container">
+                </div> 
+                <div class="send">
+                    <form action="#" id="message-send-form">
+                        <input type="text" name="message-input" id="message-input">
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
