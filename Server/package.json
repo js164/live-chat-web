@@ -4,7 +4,7 @@
   "description": "this is server socket",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "author": "jay",
   "license": "ISC",
