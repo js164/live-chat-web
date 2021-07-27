@@ -35,9 +35,9 @@ h1{
     /* background-color: rgb(250, 250, 250); */
     background: rgb(0, 0, 19);
     background-image: url(./wallpaper.png);
-    width: 70%;
+    width: 100%;
     margin: 20px;
-    width: 70vw;
+    /* width: 70vw; */
     /* left:15%; */
     /* top:15%; */
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
@@ -49,6 +49,10 @@ h1{
     height: 70vh;
     /* border: solid black 10px; */
     
+}
+
+.send{
+    position: relative;
 }
 
 #message-send-form{
@@ -66,7 +70,7 @@ h1{
 }
 
 .btn{
-    font-size: 1.5em;
+    font-size: 120%;
     border-radius: 5px;
     background-color:chartreuse;
     /* max-width: 8%; */
